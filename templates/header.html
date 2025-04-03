@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="top-bar">
+        <!-- More -->
+        <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
+            <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
+        </button>
+
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar hide">
+            <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
+                <img class="icon" src="./assets/icons/arrow-left.svg" alt="" />
+            </button>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#sanpham">Sản phẩm</a></li>
+                <li class="navbar__item">
+                    <a href="#danhgia">Đánh giá</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact">Liên hệ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
+        <!-- Logo -->
+        <a href="./" class="top-bar__logo">
+            <img src="./assets/icons/logo.svg" alt="VELOCITÀ" class="top-bar__logo-img" />
+        </a>
+        <!-- Actions -->
+        <div class="top-act">
+            <!-- Form Search -->
+            <form class="form-search d-lg-none">
+                <input type="text" name="Search" id="" placeholder="Tìm kiếm" class="form-search__input" />
+                <button type="submit" class="form-search__btn">
+                    <img src="./assets/icons/search.svg" alt="" class="icon form-search__btn-img" />
+                </button>
+            </form>
+
+            <a href="#!" class="btn top-act__sign-up d-lg-none">Đăng ký</a>
+            <a href="#!" class="btn btn-4 top-act__sign-in"><span class="top-act__sign-in-text">Đăng nhập</span></a>
+        </div>
+    </div>
+</div>

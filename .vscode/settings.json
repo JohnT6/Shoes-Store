@@ -1,0 +1,12 @@
+{
+    "prettier.printWidth": 120,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 4,
+    "emmet.syntaxProfiles": {
+        "html": {
+            "inline_break": 1
+        }
+    }
+}

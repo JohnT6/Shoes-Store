@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VELOCITÀ</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="VELOCITÀ" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body style="height: 10000000px">
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+        <main>
+            <!-- Slider -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="https://picsum.photos/id/1011/800/400" alt="Slide 1" />
+                        <video autoplay muted>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        </video>
+                        <div class="slide-text">Chào mừng đến với Slide 1</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1012/800/400" alt="Slide 2" />
+                        <video autoplay muted>
+                            <source src="./assets/6457999737651.mp4" type="video/mp4" />
+                        </video>
+                        <div class="slide-text">Đây là Slide 2</div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://picsum.photos/id/1013/800/400" alt="Slide 3" />
+                        <video autoplay muted>
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                        </video>
+                        <div class="slide-text">Khám phá Slide 3</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="play-pause">❚❚</button>
+                    <button class="control-button prev">&#10094;</button>
+                    <button class="control-button next">&#10095;</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
