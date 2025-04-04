@@ -33,7 +33,7 @@ function load(selector, path) {
 window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
 
-    if (window.scrollY > 400) {
+    if (window.scrollY > 300) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
@@ -80,10 +80,10 @@ function initJsToggle() {
 
 // Slider
 document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".slide");
-    const prev = document.querySelector(".prev");
-    const next = document.querySelector(".next");
-    const playPause = document.querySelector(".play-pause");
+    const slides = document.querySelectorAll("#slide");
+    const prev = document.querySelector("#prev");
+    const next = document.querySelector("#next");
+    const playPause = document.querySelector("#play-pause");
 
     if (!slides.length || !prev || !next || !playPause) {
         console.error("Không tìm thấy phần tử cần thiết trong slider.");

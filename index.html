@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,32 +30,141 @@
             <!-- Slider -->
             <div class="slider-container">
                 <div class="slider">
-                    <div class="slide active">
-                        <img src="https://picsum.photos/id/1011/800/400" alt="Slide 1" />
+                    <div id="slide" class="slide active">
+                        <img src="./assets/img/adidas-2.jpg" alt="Slide 1" />
                         <video autoplay muted>
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                            <source src="./assets/videos/adidas.mp4" type="video/mp4" />
                         </video>
-                        <div class="slide-text">Chào mừng đến với Slide 1</div>
+                        <div class="slide-text__container">
+                            <h1 class="slide-text__heading">Adidas Ultraboost</h1>
+                            <p class="slide-text__desc">
+                                Một thế hệ mới của giày chạy bộ tăng cường được sản xuất một phần với các vật liệu tái
+                                chế.
+                            </p>
+                            <a href="#!" class="btn slide-text__btn">Cửa hàng</a>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1012/800/400" alt="Slide 2" />
+                    <div id="slide" class="slide">
+                        <img src="./assets/img/russoo.jpg" alt="Slide 2" />
                         <video autoplay muted>
-                            <source src="./assets/6457999737651.mp4" type="video/mp4" />
+                            <source src="./assets/videos/russoo.mp4" type="video/mp4" />
                         </video>
-                        <div class="slide-text">Đây là Slide 2</div>
+                        <div class="slide-text__container">
+                            <h1 class="slide-text__heading">Russoo</h1>
+                            <p class="slide-text__desc">
+                                Giày Russoo DUNK trắng xanh, phong cách thể thao hiện đại, thiết kế nổi bật, phù hợp mọi
+                                hoạt động.
+                            </p>
+                            <a href="#!" class="btn slide-text__btn">Cửa hàng</a>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="https://picsum.photos/id/1013/800/400" alt="Slide 3" />
+                    <div id="slide" class="slide">
+                        <img src="./assets/img/asics.jpg" alt="Slide 3" />
                         <video autoplay muted>
-                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                            <source src="./assets/videos/asics.mp4" type="video/mp4" />
                         </video>
-                        <div class="slide-text">Khám phá Slide 3</div>
+                        <div class="slide-text__container">
+                            <h1 class="slide-text__heading">GEL-NIMBUS 26</h1>
+                            <p class="slide-text__desc">
+                                Đặc tính giảm chấn mềm mại của giày GEL-NIMBUS™ 26 giúp bạn có cảm giác như đang đặt
+                                chân trên mây.
+                            </p>
+                            <a href="#!" class="btn slide-text__btn">Cửa hàng</a>
+                        </div>
                     </div>
                 </div>
                 <div class="controls">
-                    <button class="play-pause">❚❚</button>
-                    <button class="control-button prev">&#10094;</button>
-                    <button class="control-button next">&#10095;</button>
+                    <button id="play-pause" class="play-pause">❚❚</button>
+                    <button id="prev" class="control-button">&#10094;</button>
+                    <button id="next" class="control-button">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="container home">
+                <!-- Brand -->
+                <div class="home-container">
+                    <div class="brand-cate row row-cols-4 row-cols-md-2 row-cols-sm-1">
+                        <div class="col">
+                            <a href="#!" class="brand-link">
+                                <article class="brand-container">
+                                    <div class="brand__img-wrap">
+                                        <img src="./assets/img/brand-adidas.png" alt="" class="brand__img" />
+                                    </div>
+                                    <section class="brand__bottom">
+                                        <div class="brand__text-wrap">
+                                            <h2 class="brand__heading">Adidas</h2>
+                                            <p class="brand__desc">
+                                                Adidas là một trong những thương hiệu giày thể thao hàng đầu thế giới.
+                                            </p>
+                                        </div>
+                                        <div class="brand__btn-wrap">
+                                            <a href="#!" class="btn brand__btn">Cửa hàng</a>
+                                        </div>
+                                    </section>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#!" class="brand-link">
+                                <article class="brand-container">
+                                    <div class="brand__img-wrap">
+                                        <img src="./assets/img/brand-adidas.png" alt="" class="brand__img" />
+                                    </div>
+                                    <section class="brand__bottom">
+                                        <div class="brand__text-wrap">
+                                            <h2 class="brand__heading">Adidas</h2>
+                                            <p class="brand__desc">
+                                                Adidas là một trong những thương hiệu giày thể thao hàng đầu thế giới.
+                                            </p>
+                                        </div>
+                                        <div class="brand__btn-wrap">
+                                            <a href="#!" class="btn brand__btn">Cửa hàng</a>
+                                        </div>
+                                    </section>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#!" class="brand-link">
+                                <article class="brand-container">
+                                    <div class="brand__img-wrap">
+                                        <img src="./assets/img/brand-adidas.png" alt="" class="brand__img" />
+                                    </div>
+                                    <section class="brand__bottom">
+                                        <div class="brand__text-wrap">
+                                            <h2 class="brand__heading">Adidas</h2>
+                                            <p class="brand__desc">
+                                                Adidas là một trong những thương hiệu giày thể thao hàng đầu thế giới.
+                                            </p>
+                                        </div>
+                                        <div class="brand__btn-wrap">
+                                            <a href="#!" class="btn brand__btn">Cửa hàng</a>
+                                        </div>
+                                    </section>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#!" class="brand-link">
+                                <article class="brand-container">
+                                    <div class="brand__img-wrap">
+                                        <img src="./assets/img/brand-adidas.png" alt="" class="brand__img" />
+                                    </div>
+                                    <section class="brand__bottom">
+                                        <div class="brand__text-wrap">
+                                            <h2 class="brand__heading">Adidas</h2>
+                                            <p class="brand__desc">
+                                                Adidas là một trong những thương hiệu giày thể thao hàng đầu thế giới.
+                                            </p>
+                                        </div>
+                                        <div class="brand__btn-wrap">
+                                            <a href="#!" class="btn brand__btn">Cửa hàng</a>
+                                        </div>
+                                    </section>
+                                </article>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
