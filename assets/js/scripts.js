@@ -136,3 +136,93 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showSlide(index);
 });
+
+// Products scroll buttons
+document.addEventListener("DOMContentLoaded", () => {
+    const productContainer = document.querySelector("#products-scroll");
+    const prevButton = document.querySelector("#products-prev");
+    const nextButton = document.querySelector("#products-next");
+
+    if (!productContainer || !prevButton || !nextButton) {
+        console.error("Không tìm thấy phần tử cần thiết.");
+        return;
+    }
+
+    const scrollAmount = 350; // Số pixel cuộn mỗi lần nhấn nút
+
+    // Xử lý nút prev
+    prevButton.addEventListener("click", () => {
+        productContainer.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth",
+        });
+    });
+
+    // Xử lý nút next
+    nextButton.addEventListener("click", () => {
+        productContainer.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth",
+        });
+    });
+});
+
+// Product hover effect
+document.addEventListener("DOMContentLoaded", () => {
+    const productImages = document.querySelectorAll("#product__img");
+
+    productImages.forEach((img) => {
+        const hoverImg = img.getAttribute("data-hover");
+        const defaultImg = img.getAttribute("src");
+
+        img.addEventListener("mouseover", () => {
+            if (hoverImg) {
+                img.style.opacity = "0"; // Làm mờ hình ảnh hiện tại
+                setTimeout(() => {
+                    img.setAttribute("src", hoverImg);
+                    img.style.opacity = "1"; // Hiển thị hình ảnh mới
+                }, 100); // Thời gian đồng bộ với CSS transition
+            }
+        });
+
+        img.addEventListener("mouseout", () => {
+            if (defaultImg) {
+                img.style.opacity = "0"; // Làm mờ hình ảnh hiện tại
+                setTimeout(() => {
+                    img.setAttribute("src", defaultImg);
+                    img.style.opacity = "1"; // Hiển thị hình ảnh cũ
+                }, 100); // Thời gian đồng bộ với CSS transition
+            }
+        });
+    });
+});
+
+// Blog scroll buttons
+document.addEventListener("DOMContentLoaded", () => {
+    const blogContainer = document.querySelector("#blog-scroll");
+    const prevButton = document.querySelector("#blog-prev");
+    const nextButton = document.querySelector("#blog-next");
+
+    if (!blogContainer || !prevButton || !nextButton) {
+        console.error("Không tìm thấy phần tử cần thiết.");
+        return;
+    }
+
+    const scrollAmount = 350; // Số pixel cuộn mỗi lần nhấn nút
+
+    // Xử lý nút prev
+    prevButton.addEventListener("click", () => {
+        blogContainer.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth",
+        });
+    });
+
+    // Xử lý nút next
+    nextButton.addEventListener("click", () => {
+        blogContainer.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth",
+        });
+    });
+});
