@@ -2563,7 +2563,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    background: url("/assets/img/background.svg") no-repeat center center / cover;
+    background: url("../img/background.svg") no-repeat center center / cover;
 }
 .auth__intro-logo,
 .auth__intro-next {
