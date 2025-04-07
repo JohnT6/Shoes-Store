@@ -2,13 +2,13 @@
     <div class="top-bar">
         <!-- More -->
         <button class="top-bar__more d-none d-lg-block js-toggle" toggle-target="#navbar">
-            <img src="./assets/icons/more.svg" alt="" class="icon top-bar__more-icon" />
+            <img src="./assets/icons/more.svg" alt="" class="top-bar__more-icon" />
         </button>
 
         <!-- Navbar -->
         <nav id="navbar" class="navbar hide">
             <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
-                <img class="icon" src="./assets/icons/arrow-left.svg" alt="" />
+                <img src="./assets/icons/arrow-left.svg" alt="" />
             </button>
             <ul class="navbar__list">
                 <li class="navbar__item"><a href="#sanpham">Nam</a></li>
@@ -22,8 +22,8 @@
         </nav>
         <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
         <!-- Logo -->
-        <a href="./" class="top-bar__logo">
-            <img src="./assets/icons/logo.svg" alt="VELOCITÀ" class="top-bar__logo-img" />
+        <a href="./" class="logo top-bar__logo">
+            <img src="./assets/icons/logo.svg" alt="VELOCITÀ" class="logo__img" />
         </a>
         <!-- Actions -->
         <div class="top-act">
@@ -31,12 +31,14 @@
             <form class="form-search d-lg-none">
                 <input type="text" name="Search" id="" placeholder="Tìm kiếm" class="form-search__input" />
                 <button id="search-button" type="submit" class="form-search__btn">
-                    <img src="./assets/icons/search.svg" alt="" class="icon form-search__btn-img" />
+                    <img src="./assets/icons/search.svg" alt="" class="form-search__btn-img" />
                 </button>
             </form>
 
-            <a href="#!" class="btn top-act__sign-up d-lg-none">Đăng ký</a>
-            <a href="#!" class="btn btn-4 top-act__sign-in"><span class="top-act__sign-in-text">Đăng nhập</span></a>
+            <a href="./sign-up.html" class="btn top-act__sign-up d-lg-none">Đăng ký</a>
+            <a href="./sign-in.html" class="btn btn--no-margin btn-4 top-act__sign-in">
+                <span class="top-act__sign-in-text">Đăng nhập</span>
+            </a>
         </div>
     </div>
 </div>

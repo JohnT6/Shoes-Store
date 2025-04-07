@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng ký | VELOCITÀ</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="VELOCITÀ" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <main class="auth">
+            <!-- Auth intro -->
+            <div class="auth__intro">
+                <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+                    <img src="./assets/icons/logo.svg" alt="VELOCITÀ" class="icon logo__img" />
+                </a>
+                <img src="./assets/icons/intro.svg" alt="" class="auth__intro-img" />
+                <p class="auth__intro-text">
+                    VELOCITÀ - Nơi chắp cánh phong cách, đồng hành cùng bạn trên mọi bước đi đỉnh cao
+                </p>
+                <button class="auth__intro-next d-none d-md-block js-toggle" toggle-target="#auth-content">
+                    <img src="./assets/icons/intro-arrow.svg" alt="" />
+                </button>
+            </div>
+
+            <!-- Auth__content -->
+            <div id="auth-content" class="auth__content hide">
+                <div class="auth__content-inner">
+                    <!-- Logo -->
+                    <a href="./" class="logo">
+                        <img src="./assets/icons/logo.svg" alt="VELOCITÀ" class="logo__img" />
+                    </a>
+                    <h1 class="auth__heading">Đăng ký</h1>
+                    <p class="auth__desc">Tạo tài khoản ngay hôm nay – mua sắm thông minh, tiết kiệm tối đa!</p>
+                    <form action="./sign-in.html" class="form auth__form">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input type="email" name="" id="" placeholder="Email" class="form__input" required />
+                                <img src="./assets/icons/message.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">Email không ở định dạng chính xác</p>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    id=""
+                                    placeholder="Mật khẩu"
+                                    class="form__input"
+                                    required
+                                    minlength="6"
+                                />
+                                <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    id=""
+                                    placeholder="Xác nhận mật khẩu"
+                                    class="form__input"
+                                    required
+                                    minlength="6"
+                                />
+                                <img src="./assets/icons/lock.svg" alt="" class="form__input-icon" />
+                                <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                            </div>
+                            <p class="form__error">Mật khẩu phải có ít nhất 6 ký tự</p>
+                        </div>
+                        <div class="form__group form__group--inline">
+                            <label class="form__checkbox">
+                                <input type="checkbox" name="" id="" class="form__checkbox-input d-none" />
+                                <span class="form__checkbox-label">Ghi nhớ</span>
+                            </label>
+                        </div>
+                        <div class="form__group auth__btn-group">
+                            <button class="btn btn--primary auth__btn form__submit-btn">Đăng ký</button>
+                            <button class="btn btn--outline auth__btn btn--no-margin">
+                                <img src="./assets/icons/google.svg" alt="" class="btn__icon" />
+                                Đăng nhập với Google
+                            </button>
+                        </div>
+                    </form>
+                    <p class="auth__text">
+                        Bạn đã có tài khoản?
+                        <a href="./sign-in.html" class="auth__link auth__text-link">Đăng nhập</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
+    </body>
+</html>

@@ -29,9 +29,9 @@ function load(selector, path) {
         });
 }
 
-// Navbar scroll effect
+// Header scroll effect
 window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
+    const header = document.querySelector("#header-scroll");
 
     if (window.scrollY > 300) {
         header.classList.add("scrolled");
