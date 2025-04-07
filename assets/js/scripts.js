@@ -226,3 +226,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Ngăn hoạt động của button tìm kiếm và button đăng ký
+document.addEventListener("DOMContentLoaded", () => {
+    const searchButton = document.getElementById("search-button");
+    const emailButton = document.getElementById("email-button");
+
+    if (searchButton) {
+        searchButton.addEventListener("click", (e) => {
+            e.preventDefault(); // Ngăn chặn hành động mặc định
+        });
+    }
+
+    if (emailButton) {
+        emailButton.addEventListener("click", (e) => {
+            e.preventDefault(); // Ngăn chặn hành động mặc định
+        });
+    }
+});
