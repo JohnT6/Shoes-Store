@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chi tiết sản phẩm</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="VELOCITÀ" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header-scroll" class="header-scrolled"></header>
+        <script>
+            load("#header-scroll", "./templates/header.html");
+        </script>
+        <main class="product-page">
+            <div class="container">
+                <!-- Search bar -->
+                <div class="product-inner search-bar__mt">
+                    <div class="search-bar d-none d-md-flex">
+                        <input type="text" name="" id="" placeholder="Search for item" class="search-bar__input" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/search.svg" alt="" class="search-bar__icon" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Breadcrumbs -->
+                <div class="product-inner">
+                    <ul class="breadcrumbs">
+                        <li>
+                            <a href="./" class="breadcrumbs__link">
+                                Trang chủ
+                                <img src="./assets/icons/arrow-right.svg" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current"
+                                >Coursecup Spikeless Golf Shoes</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Product info  -->
+                <div class="product-inner product-info-inner">
+                    <div class="row">
+                        <div class="col-5 col-xl-6 col-lg-12">
+                            <div class="prod-preview">
+                                <div class="prod-preview__list">
+                                    <div class="prod-preview__item">
+                                        <img src="./assets/img/adidas-1.png" alt="" class="prod-preview__img" />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img src="./assets/img/adidas-2.jpg" alt="" class="prod-preview__img" />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img src="./assets/img/adidas-3.jpg" alt="" class="prod-preview__img" />
+                                    </div>
+                                    <div class="prod-preview__item">
+                                        <img src="./assets/img/adidas-34.jpg" alt="" class="prod-preview__img" />
+                                    </div>
+                                </div>
+                                <div class="prod-preview__thumbs">
+                                    <img
+                                        src="./assets/img/adidas-1.png"
+                                        alt=""
+                                        class="prod-preview__thumb-img prod-preview__thumb-img--current"
+                                    />
+                                    <img src="./assets/img/adidas-2-1.jpg" alt="" class="prod-preview__thumb-img" />
+                                    <img src="./assets/img/adidas-3.jpg" alt="" class="prod-preview__thumb-img" />
+                                    <img src="./assets/img/adidas-4.jpg" alt="" class="prod-preview__thumb-img" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 col-xl-6 col-lg-12">
+                            <form action="" class="form">
+                                <section class="prod-info">
+                                    <h1 class="prod-info__heading">Coursecup Spikeless Golf Shoes</h1>
+                                    <div class="row">
+                                        <div class="col-5 col-xxl-6 col-xl-12">
+                                            <label for="" class="form__label prod-info__label">Kích cỡ</label>
+                                            <div class="filter__form-group">
+                                                <div class="form__select-wrap">
+                                                    <select id="size-select" class="form__select">
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-xxl-6 col-xl-12">
+                                            <div class="prod-props">
+                                                <div class="prod-prop">
+                                                    <img
+                                                        src="./assets/icons/document.svg"
+                                                        alt=""
+                                                        class="prod-prop__icon"
+                                                    />
+                                                    <h4 class="prod-prop__title">Đổi trả</h4>
+                                                </div>
+                                                <div class="prod-prop">
+                                                    <img src="./assets/icons/buy.svg" alt="" class="prod-prop__icon" />
+                                                    <div>
+                                                        <h4 class="prod-prop__title">Giao hàng</h4>
+                                                        <p class="prod-prop__desc">100.00vnđ từ 1-3 ngày</p>
+                                                    </div>
+                                                </div>
+                                                <div class="prod-prop">
+                                                    <img src="./assets/icons/bag.svg" alt="" class="prod-prop__icon" />
+                                                    <div>
+                                                        <h4 class="prod-prop__title">Lấy hàng trực tiếp</h4>
+                                                        <p class="prod-prop__desc">Từ cửa hàng, ngay trong hôm nay</p>
+                                                    </div>
+                                                </div>
+                                                <div class="prod-info__card">
+                                                    <div class="prod-info__row">
+                                                        <span class="prod-info__price">3.901.995 vnđ</span>
+                                                        <span class="prod-info__tax">-10%</span>
+                                                    </div>
+                                                    <p class="prod-info__total-price">3.511.795 vnđ</p>
+                                                    <div class="prod-info__row">
+                                                        <button class="btn btn--primary prod-info__add-to-cart">
+                                                            Thêm vào giỏ hàng
+                                                        </button>
+                                                        <button class="like-btn prod-info__like-btn d-sm-none">
+                                                            <img
+                                                                src="./assets/icons/heart.svg"
+                                                                alt=""
+                                                                class="like-btn__icon"
+                                                            />
+                                                            <img
+                                                                src="./assets/icons/heart-red.svg"
+                                                                alt=""
+                                                                class="like-btn__icon--liked"
+                                                            />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product content -->
+                <div class="product-inner">
+                    <div class="prod-tab js-tabs">
+                        <ul class="prod-tab__list">
+                            <li class="prod-tab__item prod-tab__item--current">Mô tả</li>
+                        </ul>
+                        <div class="prod-tab__contents">
+                            <div class="prod-tab__content prod-tab__content--current">
+                                <div class="row">
+                                    <div class="col-8 col-xl-10 col-lg-12">
+                                        <div class="text-content prod-tab__text-content">
+                                            <h2>Giày Golf Không Đinh Coursecup Spikeless</h2>
+                                            <p>
+                                                Trải nghiệm sự kết hợp hoàn hảo giữa phong cách và hiệu suất với Giày
+                                                Golf Không Đinh Coursecup Spikeless. Sản phẩm này mang đến sự thoải mái
+                                                tối ưu cùng khả năng bám đường vượt trội, giúp bạn tự tin trên sân golf
+                                                cũng như trong những hoạt động thường ngày.
+                                                <a href="#!">Tìm hiểu thêm</a>.
+                                            </p>
+                                            <hr />
+
+                                            <h3>Đặc Điểm Nổi Bật:</h3>
+                                            <p>
+                                                - Thiết kế không đinh hiện đại, mang đến sự thoải mái và phù hợp với mọi
+                                                loại địa hình.<br />
+                                                - Chất liệu cao cấp đảm bảo độ bền cao và khả năng chống nước, giữ cho
+                                                đôi chân bạn luôn khô ráo.<br />
+                                                - Đế ngoài bám đường hiệu quả, hỗ trợ từng cú đánh chuẩn xác và vững
+                                                vàng.<br />
+                                                - Phần đệm bên trong êm ái, mang lại cảm giác thoải mái suốt cả ngày
+                                                dài.<br />
+                                                - Dễ dàng kết hợp với trang phục golf hoặc trang phục thường ngày, mang
+                                                lại vẻ ngoài phong cách.<br />
+                                            </p>
+                                            <p>
+                                                <img
+                                                    src="./assets/img/adidas-1.png"
+                                                    alt="Giày Golf Không Đinh Coursecup Spikeless"
+                                                />
+                                                <em
+                                                    >Nâng tầm phong cách và hiệu suất trên sân golf của bạn với Giày
+                                                    Golf Không Đinh Coursecup Spikeless.</em
+                                                >
+                                            </p>
+                                            <blockquote>
+                                                <p>
+                                                    Coursecup là thương hiệu đáng tin cậy trong <u>giày golf</u>, được
+                                                    yêu thích bởi những thiết kế sáng tạo và chất lượng vượt trội. Với
+                                                    đôi giày này, bạn có thể tự tin bước trên mọi sân golf và để lại ấn
+                                                    tượng phong cách không thể nào quên.
+                                                </p>
+                                            </blockquote>
+                                            <hr />
+
+                                            <h3>Gợi Ý Sử Dụng:</h3>
+                                            <p>
+                                                Đảm bảo chọn kích thước phù hợp để tận hưởng sự thoải mái tối đa. Sử
+                                                dụng cho cả các trận golf chuyên nghiệp lẫn các buổi luyện tập thông
+                                                thường. Đừng quên vệ sinh đúng cách để giữ giày luôn mới và bền đẹp.
+                                            </p>
+                                            <hr />
+
+                                            <h3>Lợi Ích Bổ Sung:</h3>
+                                            <p>
+                                                - Thiết kế không đinh phù hợp cho cả trong và ngoài sân golf.<br />
+                                                - Lý tưởng cho mọi golfer, từ nghiệp dư đến chuyên nghiệp.<br />
+                                                - Là món quà tuyệt vời dành cho những người yêu thích golf.<br />
+                                                - Được sản xuất từ vật liệu bền vững, thân thiện với môi trường.<br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>

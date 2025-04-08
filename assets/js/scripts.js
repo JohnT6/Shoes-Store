@@ -244,3 +244,86 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+// Thêm active vào filter-wrap để giảm z-index
+document.addEventListener("DOMContentLoaded", () => {
+    const filterWrap = document.querySelector("#filter-wrap");
+
+    if (filterWrap) {
+        filterWrap.addEventListener("click", () => {
+            if (window.innerWidth <= 575.98) {
+                filterWrap.classList.toggle("active");
+            }
+        });
+    }
+});
+
+// Thay đổi giá trị của ô nhập liệu khi kéo slider giá
+// Hàm định dạng số thành giá tiền Việt Nam
+function formatCurrencyVND(value) {
+    return new Intl.NumberFormat("vi-VN", {
+        style: "currency",
+        currency: "VND",
+        minimumFractionDigits: 0,
+    }).format(value);
+}
+
+// Hoặc tự viết hàm định dạng (nếu không muốn dùng `Intl.NumberFormat`)
+function formatCurrencyVNDManual(value) {
+    return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "đ";
+}
+
+// Cập nhật giá trị slider và ô nhập liệu
+document.addEventListener("DOMContentLoaded", () => {
+    const minSlider = document.getElementById("min-price");
+    const maxSlider = document.getElementById("max-price");
+    const minInput = document.getElementById("min-price-input");
+    const maxInput = document.getElementById("max-price-input");
+
+    // Cập nhật giá trị ô nhập liệu khi kéo slider
+    minSlider.addEventListener("input", () => {
+        const minValue = parseInt(minSlider.value);
+        const maxValue = parseInt(maxSlider.value);
+
+        if (minValue > maxValue) {
+            minSlider.value = maxValue; // Không cho phép nhỏ nhất vượt quá lớn nhất
+        }
+
+        minInput.value = formatCurrencyVND(minSlider.value);
+    });
+
+    maxSlider.addEventListener("input", () => {
+        const minValue = parseInt(minSlider.value);
+        const maxValue = parseInt(maxSlider.value);
+
+        if (maxValue < minValue) {
+            maxSlider.value = minValue; // Không cho phép lớn nhất nhỏ hơn nhỏ nhất
+        }
+
+        maxInput.value = formatCurrencyVND(maxSlider.value);
+    });
+
+    // Cập nhật slider khi thay đổi giá trị ô nhập liệu
+    minInput.addEventListener("change", () => {
+        const value = parseInt(minInput.value.replace(/\D/g, ""));
+        if (value >= parseInt(minSlider.min) && value <= parseInt(maxSlider.value)) {
+            minSlider.value = value;
+        } else {
+            minInput.value = formatCurrencyVND(minSlider.value); // Reset nếu giá trị không hợp lệ
+        }
+    });
+
+    maxInput.addEventListener("change", () => {
+        const value = parseInt(maxInput.value.replace(/\D/g, ""));
+        if (value <= parseInt(maxSlider.max) && value >= parseInt(minSlider.value)) {
+            maxSlider.value = value;
+        } else {
+            maxInput.value = formatCurrencyVND(maxSlider.value); // Reset nếu giá trị không hợp lệ
+        }
+    });
+});
+
+// Phần filter kích cỡ
+document.getElementById("size-select").addEventListener("change", (event) => {
+    console.log("Size selected:", event.target.value);
+});

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Danh mục sản phẩm</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="VELOCITÀ" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header-scroll" class="header-scrolled"></header>
+        <script>
+            load("#header-scroll", "./templates/header.html");
+        </script>
+        <main>
+            <!-- Top -->
+            <div class="container home">
+                <section class="home-container product-mt">
+                    <div class="home-row">
+                        <h2 class="home__heading">Danh mục sản phẩm</h2>
+                        <div id="filter-wrap" class="filter-wrap">
+                            <button class="filter-btn js-toggle" toggle-target="#home-filter">
+                                Filter
+                                <img src="./assets/icons/filter.svg" alt="" class="filter-btn__icon" />
+                            </button>
+
+                            <div id="home-filter" class="filter hide">
+                                <img src="./assets/icons/arrow-up.png" alt="" class="filter__arrow" />
+                                <h3 class="filter__heading">Filter</h3>
+                                <form action="" class="filter__form form">
+                                    <div class="filter__row filter__content">
+                                        <!-- Filter column 1  -->
+                                        <div class="filter__col">
+                                            <label for="" class="form__label">Giá</label>
+                                            <div class="filter__form-group">
+                                                <div class="filter__form-slider">
+                                                    <input
+                                                        type="range"
+                                                        id="min-price"
+                                                        class="filter__slider"
+                                                        min="1000000"
+                                                        max="10000000"
+                                                        step="100000"
+                                                        value="3000000"
+                                                    />
+                                                    <input
+                                                        type="range"
+                                                        id="max-price"
+                                                        class="filter__slider"
+                                                        min="1000000"
+                                                        max="10000000"
+                                                        step="100000"
+                                                        value="7000000"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="filter__form-group filter__form-group--inline">
+                                                <div>
+                                                    <label for="min-price-input" class="form__label form__label--small">
+                                                        Nhỏ nhất
+                                                    </label>
+                                                    <div class="filter__form-text-input filter__form-text-input--small">
+                                                        <input
+                                                            type="text"
+                                                            id="min-price-input"
+                                                            class="filter__form-input"
+                                                            value="3.000.000đ"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label for="max-price-input" class="form__label form__label--small">
+                                                        Lớn nhất
+                                                    </label>
+                                                    <div class="filter__form-text-input filter__form-text-input--small">
+                                                        <input
+                                                            type="text"
+                                                            id="max-price-input"
+                                                            class="filter__form-input"
+                                                            value="7.000.000đ"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter__separate"></div>
+
+                                        <!-- Filter column 2  -->
+
+                                        <div class="filter__col">
+                                            <label for="" class="form__label">Kích cỡ</label>
+                                            <div class="filter__form-group">
+                                                <div class="form__select-wrap">
+                                                    <select id="size-select" class="form__select">
+                                                        <option value="36">36</option>
+                                                        <option value="37">37</option>
+                                                        <option value="38">38</option>
+                                                        <option value="39">39</option>
+                                                        <option value="40">40</option>
+                                                        <option value="41">41</option>
+                                                        <option value="42">42</option>
+                                                        <option value="43">43</option>
+                                                        <option value="44">44</option>
+                                                        <option value="45">45</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="filter__separate"></div>
+
+                                        <!-- Filter column 3  -->
+
+                                        <div class="filter__col">
+                                            <label for="" class="form__label">Nhãn hiệu</label>
+                                            <div class="filter__form-group">
+                                                <div class="filter__form-text-input">
+                                                    <input
+                                                        type="text"
+                                                        name=""
+                                                        id=""
+                                                        placeholder="Tìm tên nhãn hiệu"
+                                                        class="filter__form-input"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/search.svg"
+                                                        alt=""
+                                                        class="filter__form-input-icon"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="filter__form-group">
+                                                <div class="form__tags">
+                                                    <button class="form__tag">Nike</button>
+                                                    <button class="form__tag">Adidas</button>
+                                                    <button class="form__tag">Puma</button>
+                                                    <button class="form__tag">Asics</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter__row filter__footer">
+                                        <button
+                                            class="btn btn--text filter__cancel js-toggle"
+                                            toggle-target="#home-filter"
+                                        >
+                                            Tắt
+                                        </button>
+                                        <button
+                                            class="btn btn--primary filter__submit js-toggle"
+                                            toggle-target="#home-filter"
+                                        >
+                                            Hiện kết quả
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product catalog -->
+                <div class="row row-cols-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-adidas-1.jpg"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/adidas-1.png"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">Adidas Ultraboost 22</a></h2>
+                            <p class="product__desc">Giày chạy bộ Adidas Ultraboost 22</p>
+                            <div class="product__price-wrap"><p class="product__price">3.870.750đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-adidas-4.png"
+                                        data-hover="./assets/img/product-adidas-3.png"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">Harden Volume 9 Shoes</a></h2>
+                            <p class="product__desc">Giày bóng rổ Harden Volume 9</p>
+                            <div class="product__price-wrap"><p class="product__price">4.125.936đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-nike-1.png"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-nike-2.png"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">Nike Air Max 90 LV8</a></h2>
+                            <p class="product__desc">
+                                Nike Air Max 90 LV8 là mẫu giày thể thao phong cách thuộc dòng Air Max nổi tiếng của
+                                Nike.
+                            </p>
+                            <div class="product__price-wrap"><p class="product__price">4.109.000đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-nike-4.png"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-nike-3.jpg"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading">
+                                <a href="./product-detail.html">Nike Mercurial Superfly 10 Academy 'Kylian Mbappé'</a>
+                            </h2>
+                            <p class="product__desc">Giày bóng đá Nike Mercurial Superfly 10</p>
+                            <div class="product__price-wrap"><p class="product__price">8.349.000đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-puma-1.jpg"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-puma-2.jpg"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading">
+                                <a href="./product-detail.html">PUMA x ONE PIECE Suede Luffy Mũ Rơm</a>
+                            </h2>
+                            <p class="product__desc">Giày thể thao da lộn unisex PUMA x ONE PIECE Suede Luffy Mũ Rơm</p>
+                            <div class="product__price-wrap"><p class="product__price">2.500.000đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-asics-1.jpg"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-asics-2.jpg"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">GEL-DS TRAINER 14</a></h2>
+                            <p class="product__desc">Giày thể thao GEL-DS TRAINER™ 14</p>
+                            <div class="product__price-wrap"><p class="product__price">2.551.745đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-adidas-1.jpg"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/adidas-1.png"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">Adidas Ultraboost 22</a></h2>
+                            <p class="product__desc">Giày chạy bộ Adidas Ultraboost 22</p>
+                            <div class="product__price-wrap"><p class="product__price">3.870.750đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-adidas-4.png"
+                                        data-hover="./assets/img/product-adidas-3.png"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">Harden Volume 9 Shoes</a></h2>
+                            <p class="product__desc">Giày bóng rổ Harden Volume 9</p>
+                            <div class="product__price-wrap"><p class="product__price">4.125.936đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-nike-1.png"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-nike-2.png"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">Nike Air Max 90 LV8</a></h2>
+                            <p class="product__desc">
+                                Nike Air Max 90 LV8 là mẫu giày thể thao phong cách thuộc dòng Air Max nổi tiếng của
+                                Nike.
+                            </p>
+                            <div class="product__price-wrap"><p class="product__price">4.109.000đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-nike-4.png"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-nike-3.jpg"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading">
+                                <a href="./product-detail.html">Nike Mercurial Superfly 10 Academy 'Kylian Mbappé'</a>
+                            </h2>
+                            <p class="product__desc">Giày bóng đá Nike Mercurial Superfly 10</p>
+                            <div class="product__price-wrap"><p class="product__price">8.349.000đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-puma-1.jpg"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-puma-2.jpg"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading">
+                                <a href="./product-detail.html">PUMA x ONE PIECE Suede Luffy Mũ Rơm</a>
+                            </h2>
+                            <p class="product__desc">Giày thể thao da lộn unisex PUMA x ONE PIECE Suede Luffy Mũ Rơm</p>
+                            <div class="product__price-wrap"><p class="product__price">2.500.000đ</p></div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-container">
+                            <div class="product__img-wrap">
+                                <a href="./product-detail.html"
+                                    ><img
+                                        src="./assets/img/product-asics-1.jpg"
+                                        alt=""
+                                        id="product__img"
+                                        class="product__img"
+                                        data-hover="./assets/img/product-asics-2.jpg"
+                                /></a>
+                            </div>
+                            <h2 class="product__heading"><a href="./product-detail.html">GEL-DS TRAINER 14</a></h2>
+                            <p class="product__desc">Giày thể thao GEL-DS TRAINER™ 14</p>
+                            <div class="product__price-wrap"><p class="product__price">2.551.745đ</p></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>
